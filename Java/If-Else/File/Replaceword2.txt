@@ -1,0 +1,5 @@
+Hello World! This program is to 
+replace word2 with word2 
+and save it in another file! 
+So word2 no matter how many times written in file 
+is replaced by word2 

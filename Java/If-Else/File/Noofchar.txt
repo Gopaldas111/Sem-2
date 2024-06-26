@@ -1,0 +1,7 @@
+Hello World
+This 
+is 
+my 1st 
+question
+of file in 
+Java !

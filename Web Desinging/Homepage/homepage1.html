@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			width: 100%;
+			height: 700px;
+		}
+		.row1{
+			width: 100%;
+			height: 187px;
+			background-color: grey;
+			border-bottom: 7px solid green;
+			margin-bottom: 5px;
+		}
+		.img{
+			float: left;
+			margin: 10px;
+		}
+		.image{
+			width: 120px;
+			height: 100px;
+		}
+		.text{
+			font-size: 25px;
+			color: #4bf2e2;
+			margin-top: 15px;
+			flex-wrap: wrap;
+		}
+		.link{
+			text-decoration: none;
+			color: white;
+		}
+		.link2{
+			text-decoration: none;
+			color: black;
+		}
+		.link3{
+			color: black;
+		}
+		.topRight{
+			display: flex;
+			justify-content: right;
+			flex-wrap: wrap;
+		}
+		.item{
+			text-align: center;
+			font-size: 25px;
+			width: 100px;
+			margin: 9px;
+			margin-top: 15px;
+			line-height: 30px;
+		}
+		.hide{
+			float: right;
+			border: 0px;
+			background-color: grey;
+			visibility: hidden;
+			color: white;
+			font-size: 15px;
+		}
+		.row2{
+			width: 100%;
+			height: 190px;
+			border: 2px solid grey;
+		}
+		.image2{
+			width: 220px;
+			height: 160px;
+			margin-right: 150px;
+		}
+		.para1{
+			display: flex;
+			justify-content: right;
+			flex-wrap: wrap;
+		}
+		.readmore{
+			background-color: lightblue;
+			border-radius: 30px;
+			padding: 10px;
+			width: 110px;
+			text-align: center;
+			height: 45px;
+			font-size: 20px;
+			float: left;
+		}
+		.row3{
+			width: 100%;
+		}
+		.content{
+			width: 60%;
+			float: left;
+			padding-left: 10px;
+		}
+		.news{
+			width: 40%;
+			float: left;
+			padding-left: 10px;
+		}
+		.lastpara{
+			margin-left: 40px;
+		}
+		.img3{
+			float: left;
+		}
+		.image3{
+			width: 120px;
+			height: 80px;
+			margin-right: 10px;
+		}
+		.newsdata{
+			margin-bottom: 25px;
+		}
+		.date{
+			border: 1px dotted black;
+			display: inline-flex;
+		}
+		.text2{
+			margin: 10px;
+		}
+		@media (max-width: 1007px){
+			.image2{
+				width: 160px;
+				height: 120px;
+				margin-right: 80px;
+			}
+			.readmore{
+				padding: 8px;
+				width: 90px;
+				height: 35px;
+				font-size: 15px;
+			}
+		}
+		@media (max-width: 924px){
+			.maintext{
+				font-size: 1.7vw;
+			}
+			.mainhead{
+				font-size: 2.7vw;
+			}
+			.headtext{
+				font-size: 1.8vw;
+			}
+			.row3{
+				height: 60vw;
+			}
+			.content{
+				height: 60vw;
+				padding-left: 1.5vw;
+			}
+			.news{
+				height: 60vw;
+			}
+			.image3{
+				width: 14vw;
+				height: 10vw;
+			}
+			.container{
+				height: 100vw;
+			}
+		}
+		@media (max-width: 772px){
+			.image2{
+				width: 14vw;
+				height: 11vw;
+				margin-right: 20px;
+			}
+			.readmore{
+				padding: 0.6vw;
+				width: 14vw;
+				height: 4vw;
+				font-size: 2vw;
+			}
+			.para1{
+				font-size: 1.7vw;
+			}
+			.row2{
+				height: 20vw;
+			}
+		}
+		@media (max-width: 618px){
+			.text{
+				font-size: 18px;
+				margin-top: 7px;
+			}
+			.image{
+				width: 90px;
+				height: 70px;
+			}
+			.item{
+				font-size: 15px;
+				line-height: 20px;
+				margin: 7px;
+			}
+			.row1{
+				height: 120px;
+			}
+		}
+		@media (max-width: 506px){
+			.text{
+				margin-top: 3px;
+			}
+			.image{
+				width: 70px;
+				height: 50px;
+			}
+			.row1{
+				height: 110px;
+			}
+			.topRight{
+				visibility: hidden;
+			}
+			.hide{
+				visibility: visible;
+				position: relative;
+				top: -160px;
+				left: -20px;
+			}
+			.hide:hover{
+				cursor: pointer;
+			}
+			.content{
+				width: 100%;
+				height: 40vw;
+			}
+			.news{
+				width: 100%;
+				height: 40vw;
+			}
+		}
+		@media (max-width: 495px){
+			.image2{
+				visibility: hidden;
+			}
+			.readmore{
+				position: absolute;
+			}
+			.text{
+				font-size: 12px;
+			}
+			.container{
+				height: 120vw;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row1">
+			<div class="img">
+				<img src="https://logowik.com/content/uploads/images/803_shopify.jpg" class="image">
+				<div class="text">A Perfect E-commerce Solution</div>
+			</div>
+			<div class="topRight">
+				<div class="item"><a href="" class="link">Home</a></div>
+				<div class="item"><a href="" class="link">Services</a></div>
+				<div class="item"><a href="" class="link">Gallery</a></div>
+				<div class="item"><a href="" class="link">Company</a></div>
+				<div class="item"><a href="" class="link">Contact</a></div>
+			</div>
+			<div>
+				<select class="hide">
+					<option><a href="" class="link">Home</a></option>
+					<option><a href="" class="link">Services</a></option>
+					<option><a href="" class="link">Gallery</a></option>
+					<option><a href="" class="link">Company</a></option>
+					<option><a href="" class="link">Contact</a></option>
+				</select>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="img"><img src="https://i.redd.it/qnd0yxjw71k71.png" class="image2"></div>
+			<p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<div class="readmore"><a href="" class="link2">Read More</a></div>
+		</div>
+		<div class="row3">
+			<div class="content">
+				<p><h1 class="mainhead">Welcome to our WEBSITE!</h1></p>
+				<p><h3 class="headtext">This is a professional HTML/CSS layout provided by <a href="" class="link3">TemplateMo.com</a> for free of charge. You can use this template for any purpose. Credit goes to <a href="" class="link3">Free.photos</a> for photos.</h3></p>
+				<p class="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					<ul>
+						<li class="maintext">Dius aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</li>
+						<li class="maintext">Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+					</ul>
+				</p>
+				<p class="lastpara maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="news maintext">
+				<p><h3>Latest News</h3></p>
+				<div class="newsdata">
+					<div class="img3"><img src="https://www.wyzowl.com/wp-content/uploads/2020/03/software-demo.png" class="image3"></div>
+					<div class="newsdata">
+						<div class="date">OCT 29,2024</div>
+						<div class="text2">Lorem ipsum dolor sit amet, Excepteur sint occae
+											catcupidatat non 
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+				</div>
+				<div class="newsdata">
+					<div class="img3"><img src="https://www.wyzowl.com/wp-content/uploads/2020/03/software-demo.png" class="image3"></div>
+					<div class="newsdata">
+						<div class="date">OCT 29,2024</div>
+						<div class="text2">Lorem ipsum dolor sit amet, Excepteur sint occae
+											catcupidatat non 
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+				</div>
+				<div class="newsdata">
+					<div class="img3"><img src="https://www.wyzowl.com/wp-content/uploads/2020/03/software-demo.png" class="image3"></div>
+					<div class="newsdata">
+						<div class="date">OCT 29,2024</div>
+						<div class="text2">Lorem ipsum dolor sit amet, Excepteur sint occae
+											catcupidatat non 
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

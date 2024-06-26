@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			width: 100%;
+			height: 60vw;
+			border: 1px solid hotpink;
+		}
+		.row1{
+			width: 100%;
+			height: 5vw;
+			background-color: black;
+			float: left;
+		}
+		.row2{
+			width: 100%;
+			height: 55vw;
+			background-color: grey;
+			float: left;
+		}
+		.logo{
+			width: 4vw;
+			display: flex;
+			justify-content: center;
+			margin: 0.5vw;
+			float: left;
+		}
+		.logoimg{
+			width: 4vw;
+			line-height: 4vw;
+			text-align: center;
+		}
+		.logotext{
+			color: white;
+			float: left;
+			font-size: 1.8vw;
+			line-height: 5vw;
+			justify-content: center;
+			display: flex;
+		}
+		.topRight{
+			display: flex;
+			justify-content: right;
+			flex-direction: row;
+		}
+		.select{
+			color: white;
+			border: 0px;
+			background-color: black;
+			margin: 1vw;
+			font-size: 1.1vw;
+			height: 3vw;
+		}
+		.download{
+			background-color: dodgerblue;
+			color: white;
+			height: 3vw;
+			border-radius: 2vw;
+			width: 10vw;
+			text-align: center;
+			margin: 1vw;
+			line-height: 3vw;
+			font-size: 1.3vw;
+		}
+		.link{
+			color: white;
+			text-decoration: none;
+		}
+		.media{
+			display: flex;
+			justify-content: right;
+			margin: 1.7vw;
+			margin-right: 0.8vw;
+			margin-left: 0vw;
+		}
+		.mediaimg{
+			width: 1.4vw;
+			line-height: 1.4vw;
+		}
+		.bgimg{
+			width: 87.7%;
+			height: 12vw;
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOS1nS1Ycl3w6rtyRN2eIlZE3n2DqeDC81sQuYrjkiQ&s");
+			background-size: cover;
+			margin: 2vw 6vw 2vw 6vw;
+			float: left;
+		}
+		.imgtext{
+			color: white;
+			float: right;
+			font-size: 6vw;
+			font-style: italic;
+			font-weight: bold;
+			margin: 2.5vw 1vw;
+		}
+		.menu{
+			width: 87.7%;
+			height: 35vw;
+			margin: 2vw 6vw 7vw 6vw;
+			float: left;
+		}
+		.menuitem{
+			width: 22.5%;
+			margin-right: 2.85vw;
+			height: 35vw;
+			float: left;
+		}
+		.last{
+			margin-right: 0vw;
+		}
+		.menuimg{
+			width: 100%;
+			height: 13vw;
+			float: left;
+		}
+		.menuimage{
+			width: 100%;
+			height: 13vw;
+		}
+		.menutext{
+			padding: 0.8vw;
+			float: left;
+			background-color: white;
+		}
+		.menuhead{
+			font-size: 2vw;
+			font-weight: bolder;
+		}
+		.hashtag{
+			font-size: 1vw;
+		}
+		.seemore{
+			margin: 1vw 2.7vw;
+		}
+		.linedate{
+			font-size: 1.2vw;
+		}
+
+		@media (max-width:691px){
+			.menuitem{
+				width: 25%;
+				height: 40vw;
+			}
+			.odd{
+				margin-left: 19vw;
+			}
+			.even{
+				margin-right: 19vw;
+			}
+			.menuimg{
+				height: 14vw;
+			}
+			.menuimage{
+				height: 14vw;
+			}
+			.row2{
+				height: 98vw;
+			}
+			.menu{
+				height: 80vw;
+			}
+			.container{
+				height: 103vw;
+			}
+			.media{
+				margin: 0vw;
+				margin-right: 0.8vw;
+				margin-left: 0vw;
+			}
+			@media (max-width:400px){
+				.media{
+					margin: -1.7vw;
+					margin-right: 0.8vw;
+					margin-left: 0vw;
+				}
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row1">
+			<div class="logo">
+				<img src="https://gumlet-images.assettype.com/afaqs%2F2023-04%2Fe224f2f6-dbd5-4404-937f-401bc7fcbebd%2Famp_logo_white.png?w=1200&auto=format%2Ccompress&ogImage=true" class="logoimg">
+			</div>
+			<div class="logotext">SoundAMP</div>
+			<div class="topRight">
+				<select class="select">
+					<option>HTML templates</option>
+					<option><a href="">Option 1</a></option>
+					<option><a href="">Option 2</a></option>
+					<option><a href="">Option 3</a></option>
+					<option><a href="">Option 4</a></option>
+					<option><a href="">Option 5</a></option>
+				</select>
+				<select class="select">
+					<option>More HTML templates</option>
+					<option><a href="">Option 1</a></option>
+					<option><a href="">Option 2</a></option>
+					<option><a href="">Option 3</a></option>
+					<option><a href="">Option 4</a></option>
+					<option><a href="">Option 5</a></option>
+				</select>
+				<div class="download">
+					<a href="" class="link">Download Now</a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/2048px-YouTube_icon_%282011-2013%29.svg.png" class="mediaimg"></a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png" class="mediaimg"></a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Google_Plus_logo_%282015-2019%29.svg/1200px-Google_Plus_logo_%282015-2019%29.svg.png" class="mediaimg"></a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" class="mediaimg"></a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" class="mediaimg"></a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" class="mediaimg"></a>
+				</div>
+				<div class="media">
+					<a href=""><img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" class="mediaimg"></a>
+				</div>
+			</div>
+		</div>
+		<div class="row2">
+			<div class="bgimg">
+				<div class="imgtext">ALL EVENT</div>
+			</div>
+			<div class="menu">
+				<div class="menuitem odd">
+					<div class="menuimg"><img src="https://njfamily-images.s3.amazonaws.com/wp-content/uploads/2021/03/Laser-show-2-scaled.jpg" class="menuimage"></div>
+					<div class="menutext">
+						<div class="linedate">01/03/2024</div>
+						<p class="menuhead">Night Laser Show</p>
+						<p class="hashtag">#hiphop #mb #dance</p>
+						<p class="linedate">We are happy to announce this special laser show.</p>
+						<a href="" class="link">
+							<p class="download seemore">See more...</p>
+						</a>	
+					</div>
+				</div>
+				<div class="menuitem even">
+					<div class="menuimg"><img src="https://www.blueavenue.com.au/wp-content/uploads/2022/03/live-corporate-band-min-scaled.jpg" class="menuimage"></div>
+					<div class="menutext">
+						<div class="linedate">02/03/2024</div>
+						<p class="menuhead">Live Music</p>
+						<p class="hashtag">#live #rap #alternative</p>
+						<p class="linedate">Special event for our rock fans. Live music show</p>
+						<a href="" class="link">
+							<p class="download seemore">See more...</p>
+						</a>
+					</div>
+				</div>
+				<div class="menuitem odd">
+					<div class="menuimg"><img src="https://img.freepik.com/premium-photo/abstract-back-view-man-playing-modern-dj-mixer-table-generative-ai_339974-510.jpg" class="menuimage"></div>
+					<div class="menutext">
+						<div class="linedate">03/03/2024</div>
+						<p class="menuhead">DJ-Master Class</p>
+						<p class="hashtag">#dj #master-class</p>
+						<p class="linedate">DJ WoodSmell would teach you new things. Please sign up.</p>
+						<a href="" class="link">
+							<p class="download seemore">See more...</p>
+						</a>
+					</div>
+				</div>
+				<div class="menuitem last even">
+					<div class="menuimg"><img src="https://www.shutterstock.com/image-photo/energetic-crowd-partying-all-night-600nw-309592517.jpg" class="menuimage"></div>
+					<div class="menutext">
+						<div class="linedate">04/03/2024</div>
+						<p class="menuhead">Best Night Party</p>
+						<p class="hashtag">#party #clubs</p>
+						<p class="linedate">Our traditional event: Best hits all night long</p>
+						<a href="" class="link">
+							<p class="download seemore">See more...</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product landing page</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			width: 80%;
+			height: auto;
+			background-image: linear-gradient(#ebe6ea,#d9bdd3,#ebe6ea);
+			margin: auto;
+			padding: 5vw;
+		}
+		.containerIn{
+			width: 100%;
+			height: auto;
+			margin: auto;
+			background-color: white;
+		}
+		.flexContainer{
+			display: flex;
+		}
+		.image{
+			background-image: url("https://kcparent.com/downloads/24362/download/Dorm%20Shopping.jpg?cb=4b052d80cdcbd7a429b942bd51ddd238&w=1200");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 50%;
+			height: auto;
+		}
+		.image1{
+			width: 2vw;
+			height: 2vw;
+			margin: 0.4vw;
+		}
+		.menu{
+			position: relative;
+		}
+		.menuimg .menulist{
+			border: 1px solid grey;
+			position: absolute;
+			z-index: 1;
+			left: 2.8vw;
+			top: 0vw;
+			visibility: hidden;
+			background-color: white;
+		}
+		.menuitem{
+			border: 1px solid grey;
+			padding: 0.5vw;
+			font-size: 1vw;
+			text-align: center;
+		}
+		.search{
+			position: relative;
+			top: 2%;
+		}
+		.user{
+			position: relative;
+			top: 73%;
+		}
+		.cart{
+			position: relative;
+			top: 75%;
+		}
+		.info{
+			width: 50%;
+			height: auto;
+			padding: 1.7vw;
+			display: flex;
+			flex-direction: column;
+		}
+		.back{
+			font-size: 0.8vw;
+		}
+		.link{
+			text-decoration: none;
+		}
+		.one{
+			color: blue;
+		}
+		.two{
+			color: black;
+			font-size: 0.9vw;
+		}
+		.review{
+			font-size: 0.9vw;	
+			margin-top: 0.3vw;
+		}
+		.bedroom{
+			color: grey;
+			font-size: 0.8vw;
+			margin-top: 1.5vw;
+		}
+		.essentials{
+			font-weight: bolder;
+			font-size: 1.8vw;
+			margin-bottom: 0.2vw;
+		}
+		.ratings{
+			display: flex;
+		}
+		.stars{
+			width: 5vw;
+			height: 1.5vw;
+		}
+		.head{
+			font-weight: bold;
+			font-size: 1.1vw;
+			margin-top: 1vw;
+			margin-bottom: 0.3vw;
+		}
+		.type{
+			float: left;
+			text-align: center;
+			padding: 0.5vw;
+			border: 1px solid grey;
+		}
+		.quality{
+			width: 35%;
+		}
+		.style{
+			width: 20%;
+			border-radius: 2vw;
+			margin-right: 0.5vw;
+		}
+		.color{
+			width: 2%;
+			border-radius: 1vw;
+			margin-right: 1vw;
+		}
+		.c1{
+			background-color: #47ccf5;
+		}
+		.c2{
+			background-color: #0c1417;
+		}
+		.c3{
+			background-color: #96a3a8;
+		}
+		.c4{
+			background-color: #e1ecf0;
+		}
+		.type2{
+			float: left;
+			text-align: center;
+			padding: 0.5vw;
+			margin-top: 2.7vw;
+		}
+		.more{
+			width: 33%;
+			font-weight: bold;
+			font-size: 1vw;
+			border-bottom: 1px solid lightgrey;
+		}
+		.more1{
+			border-bottom: 1px solid black;
+		}
+		.head2{
+			font-weight: bold;
+			font-size: 1vw;
+			margin-top: 1.7vw;
+			margin-bottom: 0.7vw;
+		}
+		.item{
+			display: flex;
+			width: 80%;
+			height: auto;
+			margin-bottom: 2vw;
+		}
+		.image2{
+			width: 7vw;
+			height: 7vw;
+		}
+		.text1{
+			font-size: 1.1vw;
+			font-weight: bold;
+			margin: 0.6vw;
+		}
+		.text2{
+			margin: 0.6vw;
+		}
+		.suggestion{
+			width: 55%;
+			height: auto;
+			background-color: white;
+			z-index: 1;
+			border: 1px solid black;
+			position: fixed;
+			top: 38vw;
+			left: 22vw;
+			display: flex;
+			padding: 0.5vw;
+		}
+		.image3{
+			height: 5vw;
+			width: 5vw;
+			margin: 0.5vw;
+		}
+		.suggesthead{
+			display: flex;
+			flex-direction: column;
+			margin: 0.5vw;
+		}
+		.head3{
+			font-weight: bold;
+			font-size: 1.6vw;
+		}
+		.head4{
+			font-size: 0.9vw;
+			color: grey;
+			margin-top: 0.3vw;
+		}
+		.addons{
+			display: flex;
+			flex-direction: column;
+			margin: 0.6vw;
+			margin-left: 4vw;
+			text-align: center;
+		}
+		.head5{
+			font-size: 0.9vw;
+			font-weight: bold;
+			margin: 0.3vw;
+		}
+		button{
+			border-radius: 0.3vw;
+			font-size: 1vw;
+			color: grey;
+			border: 1px solid grey;
+		}
+		.amount{
+			font-size: 2.5vw;
+			margin: 1.5vw;
+			margin-left: 3.6vw;
+		}
+		.three{
+			color: white;
+		}
+		.addCart{
+			background-color: blue;
+			margin: 1.8vw;
+			border-radius: 0.3vw;
+			font-size: 1.3vw;
+			margin-left: 1vw;
+			width: 10vw;
+			text-align: center;
+			padding: 0.5vw;
+			height: auto;
+		}
+		@media(max-width: 1250px){
+			.suggestion{
+				top: 42vw;
+			}
+		}
+		.one:hover{
+			text-decoration: underline;
+		}
+		.two:hover .type{
+			background-color: #e8d3e2;
+		}
+		.two:hover .menuitem{
+			background-color: #e8d3e2;
+		}
+		.colorborder:hover .color{
+			border: 0.15vw solid black;
+		}
+		.menuimg:hover .menulist{
+			visibility: visible;
+		}
+		.more2:hover{
+			border-bottom: 1px solid black;
+		}
+		.more3:hover{
+			border-bottom: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="containerIn">
+			<div class="flexContainer">
+				<div class="image">
+					<div class="logo menu">
+						<div class="menuimg">
+							<a href="" class="menuimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" class="image1"></a>
+							<span class="menulist">
+								<a href="" class="link two"><div class="menuitem">Home</div></a>
+								<a href="" class="link two"><div class="menuitem">About</div></a>
+								<a href="" class="link two"><div class="menuitem">More like these</div></a>
+							</span>
+						</div>
+					</div>
+					<div class="logo search"><a href=""><img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" class="image1"></a></div>
+					<div class="logo user"><a href=""><img src="https://cdn-icons-png.flaticon.com/512/456/456283.png" class="image1"></a></div>
+					<div class="logo cart"><a href=""><img src="https://static-00.iconduck.com/assets.00/shopping-cart-icon-2048x1842-etrk1yv6.png" class="image1"></a></div>
+				</div>
+				<div class="info">
+					<div class="back"><a href="" class="link one"><- Back to bedroom</a></div>
+					<div class="bedroom">BEDROOM</div>
+					<div class="essentials">College Essentials</div>
+					<div class="ratings">
+						<div><img src="https://t3.ftcdn.net/jpg/05/70/04/02/360_F_570040271_DOCRxMi7KZfo1wBn8lFNJcCd9pvPoLs4.jpg" class="stars"></div>
+						<div class="review">4.4 (328 reviews)</div>
+					</div>
+					<div class="head">Select Quantity</div>
+					<div>
+						<a href="file:///C:/Users/jagdi/Desktop/HTML/Product%20landing/product2.html" class="link two"><div class="type quality">Basic</div></a>
+						<a href="" class="link two"><div class="type quality">Premium</div></a>
+					</div>
+					<div class="head">Style</div>
+					<div>
+						<a href="" class="link two"><div class="type style">Minimal</div></a>
+						<a href="" class="link two"><div class="type style">Bohemian</div></a>
+						<a href="" class="link two"><div class="type style">Floral</div></a>
+						<a href="" class="link two"><div class="type style">Other</div></a>
+					</div>
+					<div class="head">Color</div>
+					<div>
+						<a href="" class="colorborder"><div class="type color c1"></div></a>
+						<a href="" class="colorborder"><div class="type color c2"></div></a>
+						<a href="" class="colorborder"><div class="type color c3"></div></a>
+						<a href="" class="colorborder"><div class="type color c4"></div></a>
+					</div>
+					<div class="head">Size</div>
+					<div>
+						<a href="" class="link two"><div class="type style">Twin XL</div></a>
+						<a href="" class="link two"><div class="type style">Full</div></a>
+					</div>
+					<div>
+						<a href="" class="link two"><div class="type2 more more1">What's inside</div></a>
+						<a href="" class="link two"><div class="type2 more more2">Reviews</div></a>
+						<a href="" class="link two"><div class="type2 more more3">FAQs</div></a>
+					</div>
+					<div class="head2">Customizable Items</div>
+					<div class="item">
+						<div><img src="https://m.media-amazon.com/images/I/71z82rBX-UL._AC_UF894,1000_QL80_.jpg" class="image2"></div>
+						<div class="description">
+							<div class="text1">Blush Plush Comforter</div>
+							<a href="" class="link two"><div class="text2">See product details</div></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img"><img src="https://m.media-amazon.com/images/I/814nailEccL._AC_UF894,1000_QL80_.jpg" class="image2"></div>
+						<div class="description">
+							<div class="text1">Blanket</div>
+							<a href="" class="link two"><div class="text2">See product details</div></a>
+						</div>
+					</div>
+				</div>
+				<div class="suggestion">
+					<div><img src="https://images.meesho.com/images/products/110391400/s2edt_512.webp" class="image3"></div>
+					<div class="suggesthead">
+						<div class="head3">College Essentials</div>
+						<div class="head4">Everything you need for freshman year.</div>
+					</div>
+					<div class="addons">
+						<div class="head5">Add Ons</div>
+						<div class="add"><button>+</button></div>
+					</div>
+					<div class="amount">$195</div>
+					<a href="" class="link three"><div class="addCart">Add to Cart (2)</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

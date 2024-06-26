@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Box-type Layout</title>
+	<style type="text/css">
+		.row{
+			width: 100%;
+			float: left;
+		}
+		.seperator{
+			width: 100%;
+			float: left;
+			height: 30px;
+		}
+		.s1{
+			float: left;
+			background-color: red;
+			margin-right: 5%;
+		}
+		.s2{
+			float: left;
+			background-color: skyblue;
+			margin-right: 5%;
+		}
+		.s3{
+			float: right;
+			background-color: seagreen;
+		}
+		.a1{
+			float: left;
+			background-color: red;
+			margin-right: 5%;
+			width: 20%;
+		}
+		.a2{
+			float: left;
+			background-color: skyblue;
+			margin-right: 5%;
+			width: 50%;
+		}
+		.a3{
+			float: right;
+			background-color: seagreen;
+			width: 20%;
+		}
+		.studentText{
+			text-align: center;
+		}
+		.student{
+			width: 30%;
+			height: 200px;
+		}
+		.faculty{
+			width: 21%;
+			height: 200px;
+		}
+		.adminText{
+			text-align: center;
+		}
+		.facultyText{
+			text-align: center;
+		}
+		.admin{
+			height: 200px;
+		}
+		.f1{
+			float: left;
+			background-color: greenyellow;
+			margin-right: 5%;
+		}
+		.f2{
+			float: left;
+			background-color: blueviolet;
+			margin-right: 5%;
+		}
+		.f3{
+			float: left;
+			background-color: orange;
+			margin-right: 5%;
+		}
+		.f4{
+			float: right;
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="s1 student">
+			<p class="studentText">Student<br>1</p>
+		</div>
+		<div class="s2 student">
+			<p class="studentText">Student<br>2</p>
+		</div>
+		<div class="s3 student">
+			<p class="studentText">Student<br>3</p>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<div class="row">
+		<div class="f1 faculty">
+			<p class="facultyText">Faculty<br>1</p>
+		</div>
+		<div class="f2 faculty">
+			<p class="facultyText">Faculty<br>2</p>
+		</div>
+		<div class="f3 faculty">
+			<p class="facultyText">Faculty<br>3</p>
+		</div>
+		<div class="f4 faculty">
+			<p class="facultyText">Faculty<br>4</p>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<div class="row">
+		<div class="a1 admin">
+			<p class="adminText">Admin<br>1</p>
+		</div>
+		<div class="a2 admin">
+			<p class="adminText">Admin<br>2</p>
+		</div>
+		<div class="a3 admin">
+			<p class="adminText">Admin<br>3</p>
+		</div>
+	</div>
+</body>
+</html>

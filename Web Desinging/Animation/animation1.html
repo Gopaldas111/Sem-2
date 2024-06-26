@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			animation-name: a;
+			animation-duration: 4s;
+			animation-delay: 2s;
+			animation-direction: reverse;
+			animation-timing-function: ease-out;
+/*			animation-iteration-count: infinite;*/
+		}
+		@keyframes a{
+			0%{
+				background-color: red;
+				margin-left: 0px;
+				margin-top: 0px;
+			}
+			25%{
+				background-color: blue;
+				margin-left: 400px;
+				margin-top: 0px;
+			}
+			50%{
+				background-color: yellow;
+				margin-left: 400px;
+				margin-top: 400px;
+			}
+			75%{
+				background-color: green;
+				margin-left: 0px;
+				margin-top: 400px;
+			}
+			100%{
+				background-color: teel;
+				margin-left: 0px;
+				margin-top: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Animation Demo</h1>
+	<div></div>
+</body>
+</html>

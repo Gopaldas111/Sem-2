@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 4(C)</title>
+	<h2>Form</h2>
+</head>
+<body>
+    <h4>Part C</h4>
+    <form>
+    <fieldset style="background-color: blueviolet;"><br>
+    	<table align="center" cellpadding="2" border="1" cellspacing="0" style="background-color: white;" >
+    		<tr style="background-color: grey; height: 80px;">
+    			<td colspan="2" align="center" style="font-size: 180%;">Create Account&nbsp;&nbsp;&nbsp;</td>
+    		</tr>
+    		<tr><td style="border: none;"></td><td style="border: none;"></td></tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;First Name*</font></td>
+    			<td style="border: none;"><font color="mediumaquamarine">Last Name</font></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;">&nbsp;<input type="text" placeholder="Enter your first name" required></td>
+    			<td style="border: none;"><input type="text" placeholder="Enter your last name"></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;Email*</font></td>
+    		</tr>
+    		<tr><td colspan="2" style="border: none;">&nbsp;<input type="Email" placeholder="Enter your email" required></td></tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;Password*</font></td>
+    			<td style="border: none;"><font color="mediumaquamarine">Confirm Password*</font></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;">&nbsp;<input type="Password" placeholder="Enter your password" required></td>
+    			<td style="border: none;"><input type="Password" placeholder="Enter your password again" required></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;Gender</font></td>
+    			<td style="border: none;"><font color="mediumaquamarine">Hobbies</font></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;">&nbsp;<input type="radio" name="gender">Male&nbsp;&nbsp;<input type="radio" name="gender">Female</td>
+    			<td style="border: none;"><input type="checkbox">Music <input type="checkbox">Sports <input type="checkbox">Travel <input type="checkbox">Movies </td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;Source of Income</font></td>
+    			<td style="border: none;"><font color="mediumaquamarine">Income</font></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;">&nbsp;<select>
+    				<option>Employed</option>
+    				<option>Business</option>
+    				<option>Unemployed</option>
+    			</select></td>
+    			<td style="border: none;"><input type="range" min="0" max="20" value="0" step="1" oninput="this.nextElementSibling.value = this.value"><output>20</output><font>K</font></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;Upload Profile Picture</font></td>
+    			<td style="border: none;"><font color="mediumaquamarine">Age</font></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;">&nbsp;<input type="file" id="myFile"></td>
+    			<td style="border: none;"><input type="number" value="18"></td>
+    		</tr>
+    		<tr>
+    			<td style="border: none;"><font color="mediumaquamarine">&nbsp;Bio</font></td>
+    		</tr>
+    		<tr>
+    			<td colspan="2" style="border: none;">&nbsp;<textarea rows="4" cols="68"></textarea></td>
+    		</tr><br><br>
+    		<tr style="background-color: grey; height: 80px;">
+    			<td colspan="2" align="right" valign="bottom"><input type="submit" value="Create" style=" background-color: mediumaquamarine;"></td>
+    		</tr>
+       	</table><br><br>
+       </fieldset><br>
+    </form>
+</body>
+</html>

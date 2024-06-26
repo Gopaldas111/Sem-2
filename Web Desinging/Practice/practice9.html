@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tooltip</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			width: 920px;
+			height: 240px;
+			border: 1px solid black;
+			padding: 20px;
+			background-color: #edc6af;
+		}
+		.tooltip{
+			position: relative;
+			display: inline-block;
+		}
+		.tooltip .tooltiptext{
+			visibility: hidden;
+			background-color: black;
+			color: white;
+			width: 120px;
+			top: 100%;
+			left: 50%;
+			margin-left: -60px;
+			padding: 5px;
+			text-align: center;
+			z-index: 1;
+			font-size: 25px;
+			border-radius: 10px;
+			position: absolute;
+		}
+		.tooltip:hover .tooltiptext{
+			visibility: visible;
+		}
+		.image{
+			margin: 20px;
+			margin-bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tooltip Practice</h1>
+	<div class="container">
+		<div class="tooltip">
+			<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" height="130px" width="130px" class="image"></a>
+			<span class="tooltiptext">Instagram</span>
+		</div>
+		<div class="tooltip">
+			<a href=""><img src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-Logo-2013.png" height="130px" width="130px" class="image"></a>
+			<span class="tooltiptext">Snapchat</span>
+		</div>
+		<div class="tooltip">
+			<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" height="130px" width="130px" class="image"></a>
+			<span class="tooltiptext">LinkedIn</span>
+		</div>
+		<div class="tooltip">
+			<a href=""><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-icon-png-image_6315990.png" height="130px" width="130px" class="image"></a>
+			<span class="tooltiptext">Whatsapp</span>
+		</div>
+		<div class="tooltip">
+			<a href=""><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png" height="130px" width="130px" class="image"></a>
+			<span class="tooltiptext">Twitter</span>
+		</div>
+	</div>
+</body>
+</html>

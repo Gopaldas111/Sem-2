@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			width: 25%;
+			margin: auto;
+		}
+		.a{
+			 position: relative; left: 15px;
+		}
+		.b{
+			position: relative; left: 15px;
+		}
+		.c{
+			position: relative; left: 55px;
+		}
+		.d{
+			position: relative; left: 56px;
+		}
+		.e{
+			position: relative; left: 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Employee Information</h1>
+	<form>
+		<fieldset>
+			<legend style="text-align: left;">Personal Information</legend>
+			<table align="center">
+				<tr>
+					<td>Employee Id</td>
+					<td>:</td>
+					<td><input type="number" name="id"></td>
+				</tr>
+				<tr>
+					<td>Employee Name</td>
+					<td>:</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>:</td>
+					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td>Contact No.</td>
+					<td>:</td>
+					<td><input type="text" name="number" pattern="[0-9]{10}" maxlength="10" title="Please Enter Contact No. correctly"></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend style="text-align: left;">Education & Experience</legend>
+			<table align="center">
+				<tr>
+					<td>Education</td>
+					<td class="a">:</td>
+					<td class="a"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<td>Experience</td>
+					<td class="a">:</td>
+					<td class="a"><textarea></textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend style="text-align: left;">Other Information</legend>
+			<table align="center">
+				<tr>
+					<td class="e">Designation</td>
+					<td class="c">:</td>
+					<td class="b"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<td class="e">Salary</td>
+					<td class="c">:</td>
+					<td class="b"><input type="number" name="Salary"></td>
+				</tr>
+				<tr>
+					<td class="e">Bio-Photo</td>
+					<td class="c">:</td>
+					<td class="d"><input type="file" name="photo"></td>
+				</tr>
+			</table>
+		</fieldset>
+		<input type="submit" name="submit" value="Submit">
+		<input type="submit" name="reset" value="Cancel">
+	</form>
+</body>
+</html>

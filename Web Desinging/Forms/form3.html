@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 4(B)</title>
+	<h2 align="center">Form</h2>
+	<style type="text/css">
+		body{
+			margin: auto;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+    <h4 align="center">Part B</h4>
+    <fieldset>
+    	<form>
+    		<table align="center" cellpadding="5">
+    			<tr align="center">
+    				<td colspan="6"><h2>Employee Registration</h2></td>
+    			</tr>
+    			<tr align="center">
+    				<td colspan="6"><h4>Personal Information</h4></td>
+    			</tr>
+    			<tr>
+    				<td>Employee Id</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Employee Id"></td>
+    				<td>Employee Name</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Employee Name"></td>
+    			</tr>
+    			<tr>
+    				<td>Email</td>
+    				<td>:</td>
+    				<td><input type="Email" placeholder="Enter Email"></td>
+    				<td>Contact No.</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Contact No" id="phone" maxlength="10" pattern="[0-9]{10}" title="Enter Phone Number properly"></td>
+    			</tr>
+    			<tr>
+    				<td>Marital Status</td>
+    				<td>:</td>
+    				<td><input type="radio" name="Marital">Single <input type="radio" name="Marital">Married</td>
+    			</tr>
+    			<tr align="center">
+    				<td colspan="6"><h4>Education Qualification</h4></td>
+    			</tr>
+    			<tr>
+    				<td>Education</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Education details"></td>
+    				<td>Experience</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Experience details"></td>
+    			</tr>
+    			<tr align="center">
+    				<td colspan="6"><h4>Job Details</h4></td>
+    			</tr>
+    			<tr>
+    				<td>Designation</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Designation details"></td>
+    				<td>Job Location</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Job Location"></td>
+    			</tr>
+    			<tr>
+    				<td>Salary</td>
+    				<td>:</td>
+    				<td><input type="text" placeholder="Enter Salary details"></td>
+    			</tr>
+    		</table>
+    		<hr>
+    		<div align="center"><input type="submit" name="submit" value="Register"></div>
+    		<br><br><br>
+    	</form>
+    </fieldset>
+</body>
+</html>
